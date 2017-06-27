@@ -1,0 +1,33 @@
+<label>
+    Введите имя:
+</label>
+<input [(ngModel)]="name" placeholder="name" class="form-control"/>
+<h2>
+    Добро пожаловать {{name}}!
+</h2>
+<h1>
+    {{title}}
+</h1>
+
+<div class="col-md-12">
+    <div class="col-md-6">
+        <button class="btn btn-danger">show first page</button>
+        <page1></page1>
+    </div>
+    <div class="col-md-6">
+        <button class="btn btn-warning">show second page</button>
+        <page2></page2>
+    </div>
+</div>
+<label>
+    <ul>
+        <li>
+            <p>hiden(ngShow/ngHide)</p>
+        </li>
+        <li>
+            <p>
+                ngIf
+            </p>
+        </li>
+    </ul>
+</label>
