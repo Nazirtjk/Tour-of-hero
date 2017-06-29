@@ -8,31 +8,34 @@
 <h1>
     {{title}}
 </h1>
-
-<div class="col-md-12">
+<div class="col-md-12"  >
     <div class="col-md-6">
-        <button class="btn btn-danger">show first page</button>
+        <button class="btn btn-danger" (click)="toggle()" >show first page</button>
+        <div [ngClass]="{invisible: visibility}">
         <page1></page1>
+        </div>
     </div>
     <div class="col-md-6">
-        <button class="btn btn-warning">show second page</button>
+        <button class="btn btn-warning" (click)="toggle1()" >show second page</button>
+        <div *ngIf="condition;else unset">
         <page2></page2>
+        </div>
     </div>
 </div>
-<label>
-    <ul>
-        <li>
-            <p>hiden(ngShow/ngHide)</p>
-        </li>
-        <li>
-            <p>
-                ngIf
-            </p>
-        </li>
-        <li>
-            <p>
-                routing
-            </p>
-        </li>
-    </ul>
-</label>
+<!--<label>-->
+    <!--<ul>-->
+        <!--<li>-->
+            <!--<p>hiden(ngShow/ngHide)</p>-->
+        <!--</li>-->
+        <!--<li>-->
+            <!--<p>-->
+                <!--ngIf-->
+            <!--</p>-->
+        <!--</li>-->
+        <!--<li>-->
+            <!--<p>-->
+                <!--routing-->
+            <!--</p>-->
+        <!--</li>-->
+    <!--</ul>-->
+<!--</label>-->
